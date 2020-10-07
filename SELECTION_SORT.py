@@ -8,9 +8,8 @@ def selection_sort (items):
                 min_index = i
 
         if items[j] > items[min_index]:
-            aux = items[j]
-            items[j]= items[min_index]
-            items[min_index] = aux
+             items[j], items[min_index] = items[min_index], items[j]
+             
     return items
 
 items = []
